@@ -21,8 +21,8 @@
 
     :root {
       --bg: #08070d;
-      --surface: #100f1a;
-      --surface2: #171626;
+      --surface: rgba(16, 15, 26, 0.4);
+      --surface2: rgba(23, 22, 38, 0.4);
       --violet: #8b6cf6;
       --violet2: #b8a3ff;
       --cyan: #3fd8cc;
@@ -1051,6 +1051,10 @@
 
     /* ---------- PREMIUM ENHANCEMENTS ---------- */
     :root { --shadow-lg: 0 24px 70px rgba(0,0,0,.38); }
+    .orb-chip, .sg, .wc, .stat-card, .ci, .ticker, .modal-content, .pill, .sk, .st {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
     body::after {
       content:''; position:fixed; inset:0; pointer-events:none; z-index:-1;
       background: linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
